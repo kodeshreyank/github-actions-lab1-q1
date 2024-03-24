@@ -8,13 +8,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - uses: actions/checkout@4
     - name: Set up Python 3.8
       uses: actions/setup-python@v2
       with:
         python-version: 3.8
-
-    - name: list
-      run: ls -l
 
     - name: Install dependencies
       run: |
